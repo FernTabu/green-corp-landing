@@ -436,24 +436,6 @@ footer h3 {
     width: 75px;
     height: 75px;
   }
-
-  .form {
-    padding: 50px 10px;
-  }
-
-  .form h1 {
-    font-size: 36px;
-  }
-
-  footer {
-    padding: 50px 10px;
-  }
-
-  .footer__container {
-    flex-direction: column;
-  }
-
-
   .features {
     padding: 50px 10px;
   }
@@ -465,10 +447,6 @@ footer h3 {
   .features__feedback {
     flex-direction: column;
   }
-
-  /* .features__feedback {
-    align-items: stretch;
-  } */
 
   .features__feedback-left {
     margin-right: 0;
@@ -502,5 +480,20 @@ footer h3 {
     height: 500px;
   }
 
+  .form {
+    padding: 50px 10px;
+  }
+
+  .form h1 {
+    font-size: 36px;
+  }
+
+  footer {
+    padding: 50px 10px;
+  }
+
+  .footer__container {
+    flex-direction: column;
+  }
 
 }
