@@ -79,6 +79,14 @@ button:hover {
   justify-content: space-around;
   padding-bottom: 115px;
   padding-top: 115px;
+  position: relative;
+}
+
+.orb-canvas{
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
 }
 
 .about h1 {
