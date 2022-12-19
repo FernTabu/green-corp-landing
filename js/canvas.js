@@ -1,5 +1,5 @@
 const COLORS = ["255,108,80", "5,117,18", "29,39,57", "67,189,81"]; //В методе init нужно инициализировать цвет пузырька 1 из случайных цветов.Для этого заведем глобальную переменную с цветами, в формате RGB
-const BUBBLE_DENSITY = 28;
+const BUBBLE_DENSITY = 50;
 
 function generateDecimalBetween(left, right) {
     return (Math.random() * (left - right) + right).toFixed(2);//с помощью метода toFixed(2) мы оставляем от числа два знака после запятой
@@ -20,7 +20,7 @@ class Bubble {
     init() {
         this.color = COLORS[Math.floor(Math.random() * COLORS.length)];
         this.alpha = generateDecimalBetween(5, 10) / 10;//прозрачность, которая принимает значения от 0 до 1. 
-        this.size = generateDecimalBetween(3, 9);
+        this.size = generateDecimalBetween(1, 3);
         this.translateX = generateDecimalBetween(0, this.canvasWidth);
         this.translateY = generateDecimalBetween(0, this.canvasHeight);
         this.velocity = generateDecimalBetween(20, 40);//На это число мы будем все время смещать позицию пузырька, таким образом, эти свойства задают скорость и направление движения:
